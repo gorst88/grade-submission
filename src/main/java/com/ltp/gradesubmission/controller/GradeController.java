@@ -15,7 +15,11 @@ import com.ltp.gradesubmission.service.GradeService;
 @Controller
 public class GradeController {
 
-    GradeService gradeService = new GradeService();
+    GradeService gradeService;
+
+    public GradeController(GradeService gradeService) {
+        this.gradeService = gradeService;
+    }
 
     @GetMapping("/")
     public String getForm(Model model, @RequestParam(required = false) String id) {
