@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import com.ltp.gradesubmission.Constants;
-import com.ltp.gradesubmission.Grade;
+import com.ltp.gradesubmission.pojo.Grade;
 import com.ltp.gradesubmission.repository.GradeRepository;
 
 @Service
